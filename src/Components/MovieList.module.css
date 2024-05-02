@@ -1,0 +1,66 @@
+/* MovieList.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    margin: 0 auto;
+
+    max-width: 1200px;  /* Adjusted to 1400px as per new requirement */
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.titleHeader {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.reviewHeader {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.companyHeader {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media Queries with Fixed Widths */
+@media (max-width: 1400px) {
+    .container, .header {
+        padding: 10px;
+        width: 800px; /* Fixed width for large tablets and small desktops */
+    }
+}
+
+@media (max-width: 1024px) {
+    .container, .header {
+        padding: 8px;
+        width: 750px; /* Fixed width suitable for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .header {
+        padding: 5px;
+        width: 500px; /* Fixed width targeting smaller tablets and large phones */
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .header {
+        padding: 3px;
+        width: 320px; /* Fixed width for smaller mobile devices */
+    }
+}
